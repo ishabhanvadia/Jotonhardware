@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joton Hardware - About</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Header Start -->
+  <div class="hero">
+    <!-- Hero Slider -->
+    <div class="hero-slider">
+      <div class="slide active" style="background-image: url('upload/1.jpg');"></div>
+      <div class="slide" style="background-image: url('upload/2.jpg');"></div>
+      <div class="slide" style="background-image: url('upload/3.jpg');"></div>
+
+      <!-- Controls -->
+      <div class="slider-controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div id="logo">
+        <img src="upload/1.png" alt="jotonhardware">
+      </div>
+
+      <div class="nav-items" id="navMenu">
+        <ul>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="about.html">About Us</a></li>
+          <li class="item"><a href="products.html">Products</a></li>
+          <li class="item"><a href="quality.html">Quality</a></li>
+          <li class="item"><a href="#">Brochure</a></li>
+          <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Header End -->
+
+  <main>
+    <section class="about-section">
+      <h1 class="section-title">Joton Hardware</h1>
+
+      <p class="about-description">
+        Joton Hardware is Rajkot based India’s leading manufacturer in the premium segment of Architectural hardware,
+        Door and window fittings and furniture fittings. Although having a very humble beginning, Joton grew at a very
+        fast pace due to unmatched quality and unique craftsmanship of its products under the brand name “JOTON”.
+      </p>
+
+      <div class="image-container" data-aos="fade-right">
+        <img src="upload/joton-bg.jpg" alt="Pisa Building" class="building-image" />
+      </div>
+
+      <div class="content-container" data-aos="fade-left">
+        <h1>
+          <span class="gradient-text">At Perfect Marketing,</span><br />
+          we know this <span class="gradient-text">profoundly</span>
+        </h1>
+        <p>
+          After all, in our journey of more than 25 years of designing, crafting and delivering top-notch architectural
+          hardware, we have always strived to strike a delicate balance between heart-touching creativity and
+          mind-pleasing engineering prowess. And we have added the third angle to the story too! Apart from maintaining
+          the unmatched quality of our products, we have excelled in elevating standards of services. We have
+          established a nationwide strong network of distributors and dealers and in some of the areas we offer
+          same-day delivery too.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Vision Values Section -->
+    <section class="mv-section">
+      <div class="mv-card">
+        <img src="Untitled design/1.png" alt="Mission Icon" class="mv-logo" />
+        <h3>Mission</h3>
+        <p>
+          “To be a global leader in high-quality, durable, and efficient submersible pump winding wires, empowering
+          industries and communities with reliable electrical solutions.”
+        </p>
+      </div>
+      <div class="mv-card">
+        <img src="Untitled design/2.png" alt="Vision Icon" class="mv-logo" />
+        <h3>Vision</h3>
+        <p>
+          “To manufacture superior winding wires using advanced technology, ensuring durability and efficiency while
+          maintaining environmental sustainability and customer satisfaction.”
+        </p>
+      </div>
+      <div class="mv-card">
+        <img src="Untitled design/3.png" alt="Values Icon" class="mv-logo" />
+        <h3>Values</h3>
+        <p>
+          <b>J</b> – Just in time Production<br />
+          <b>O</b> – Optimal Quality Standard<br />
+          <b>T</b> – Teamwork & Collaboration<br />
+          <b>O</b> – Optimal Production<br />
+          <b>N</b> – New Manufacturing Techniques
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section>
+      <div class="testimonial-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">
+              Joton Hardware offers a fantastic range of premium furniture fittings, and the quality is unmatched!
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">
+              The designs are sleek and modern. Highly recommended for anyone looking for top-notch hardware products.
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">
+              Joton Hardware’s fittings are both functional and elegant. Perfect for anyone looking for quality and
+              durability. Their team is professional and helpful!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
+  <!-- header js -->
+  <script>
+    let slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    document.querySelector(".next").onclick = () => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    };
+
+    document.querySelector(".prev").onclick = () => {
+      slides[current].classList.remove("active");
+      current = (current - 1 + slides.length) % slides.length;
+      slides[current].classList.add("active");
+    };
+
+    setInterval(() => {
+      document.querySelector(".next").click();
+    }, 5000);
+  </script>
+
+
+  <!-- Footer Start -->
+  <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-form">
+        <h2>Get In Touch</h2>
+        <p>Your email address will not be published. Required fields are marked *</p>
+        <form>
+          <input type="text" placeholder="Your Name *" required />
+          <input type="email" placeholder="Your Email *" required />
+          <input type="text" placeholder="Your Mobile *" required />
+          <input type="text" placeholder="City *" required />
+          <input type="text" placeholder="State *" required />
+          <textarea placeholder="Questions *" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118247.76520585529!2d70.63069289726559!3d22.15483319999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6f6059ca6636e5fb%3A0xc3590178c0d6a1c9!2sSHREE%20MADHAV%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1750502279934!5m2!1sen!2sin"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo-box">
+          <img src="upload/1.png" alt="Joton Hardware Logo" class="footer-logo" />
+          <p class="address">
+            Lorem ipsum dolor sit amet consectetur<br />
+            Lorem ipsum dolor sit amet.<br />
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <div class="social-icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-x"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Need Help</h4>
+          <p><i class="bi bi-telephone-fill"></i> +91 1234567890</p>
+          <h4>Email Us</h4>
+          <p><i class="bi bi-envelope-fill"></i> jotonhardware@gmail.com</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Link</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Products</li>
+            <li>Brochure</li>
+            <li>Quality</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Top Categories</h4>
+          <ul>
+            <li>D Handles</li>
+            <li>Cabinet Handle</li>
+            <li>Knobs</li>
+            <li>Sliding Handle</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li>T&C</li>
+            <li>Privacy Policy</li>
+            <li>Disclaimer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2025 | Joton Hardware</p>
+        <p>Created & Maintained by Joton Hardware</p>
+      </div>
+    </footer>
+  <!-- Footer End -->
+
+</body>
+
+</html>
